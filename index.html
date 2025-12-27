@@ -2,21 +2,66 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi página web TIC</title>
+  
+  <!-- Google Fonts (requisito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  
+  <!-- Header semántico (requisito) -->
+  <header class="header">
+    <h1 id="titulo">Mi página web TIC</h1>
+    <p class="subtitle">Proyecto interactivo de tecnología</p>
+  </header>
 
-  <h1 id="titulo">Mi página web</h1>
+  <!-- Sección principal (semántica - requisito) -->
+  <section class="main-section">
+    <h2>Cambia el título</h2>
+    <input type="text" id="textoInput" placeholder="Escribe algo aquí">
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+    
+    <br><br>
+    
+    <h2>Imagen interactiva</h2>
+    <p>Haz clic en la imagen para cambiarla</p>
+    <img id="imagen" src="images/img1.jpg" width="300" onclick="cambiarImagen()" alt="Imagen interactiva">
+    
+    <br><br>
+    
+    <!-- Imagen fija adicional (requisito) -->
+    <h2>Tecnología moderna</h2>
+    <img src="images/img3.jpg" width="400" alt="Tecnología moderna" class="fixed-image">
+    <p>La tecnología avanza cada día más rápido</p>
+  </section>
 
-  <input type="text" id="textoInput" placeholder="Escribe algo">
-  <button onclick="cambiarTexto()">Cambiar texto</button>
+  <!-- Sección con enlace externo (requisito) -->
+  <section class="info-section">
+    <h2>Aprende más</h2>
+    <p>Si quieres saber más sobre tecnología, visita esta página oficial:</p>
+    <a 
+      href="https://www.un.org/es/digital-cooperation-panel" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      title="Panel de Cooperación Digital de la ONU - Abre en nueva pestaña"
+      class="external-link"
+    >
+      Visitar Panel Digital ONU →
+    </a>
+  </section>
 
-  <br><br>
-
-  <img id="imagen" src="images/img1.jpg" width="300" onclick="cambiarImagen()">
-
+  <!-- Objeto en movimiento (requisito JS) -->
   <div id="cuadro"></div>
+
+  <!-- Footer semántico (requisito) -->
+  <footer class="footer">
+    <p>Proyecto académico TIC - 2024</p>
+  </footer>
 
   <script src="scripts/script.js"></script>
 </body>
