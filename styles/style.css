@@ -1,17 +1,170 @@
+/* Importar fuente de Google Fonts */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
+/* Header */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 10px 0 0 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Secciones */
+.main-section,
+.info-section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-section {
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #667eea;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Input y botón */
+input[type="text"] {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 90%;
+  font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5568d3;
+}
+
+/* Imágenes */
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin: 20px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+#imagen {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#imagen:hover {
+  transform: scale(1.05);
+}
+
+.fixed-image {
+  margin-top: 20px;
+}
+
+/* Enlace externo */
+.info-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.external-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.external-link:hover {
+  background-color: #5568d3;
+}
+
+/* Cuadro en movimiento (mejorado con JS) */
 #cuadro {
   width: 50px;
   height: 50px;
-  background-color: red;
-  position: relative;
-  animation: mover 3s infinite;
+  background-color: #667eea;
+  position: fixed;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.6);
+  /* Ya no usamos animation CSS, se mueve con JS */
 }
 
-@keyframes mover {
-  from { left: 0; }
-  to { left: 300px; }
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
