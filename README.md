@@ -11,4 +11,4 @@ Página web creada con HTML, CSS y JavaScript y alojada en GitHub Pages.
 - Objeto en movimiento
 
 ## Estética
-Inspirada en: El CO2 en el cambio climático (EL PAÍS)
+Inspirada en: Convocatoria Premios ConPropósito.
